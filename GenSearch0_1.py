@@ -116,3 +116,4 @@ if s>1:
 	print "============================ RESULT ==============================="
 	print "DOCUMENT is", Get_Doc[0][0], "and FITNESS SCORE is ", Get_Doc[0][1]
 	print ""
+    
