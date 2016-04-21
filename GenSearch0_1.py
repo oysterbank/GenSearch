@@ -1,5 +1,5 @@
 # GenSearch v0.1
-# Evolutionary Document Search using genetic algorithm
+# Evolutionary Document Search using genetic algorithms
 # 
 # Authors: Kris Laratta, Aman Mundra, and Priyank Srivastava
 
@@ -107,7 +107,6 @@ if s>1:
 	F1, save_f1 = CWFD_calc( testset_2nd, FD_weights_Search2 )
 	F2, save_f2 = CWFD_calc( testset_1st, FD_weights_Search1 )
 	Fit = [(a+b) for a,b in zip( F1, F2 )]
-	#print "Final Fitness score ", Fit
 	Final = zip( save_f1, Fit)
 	Final_sortd = sorted(Final, key=lambda tup: tup[1])
 	Get_Doc = Final_sortd[::-1]
@@ -117,4 +116,3 @@ if s>1:
 	print "============================ RESULT ==============================="
 	print "DOCUMENT is", Get_Doc[0][0], "and FITNESS SCORE is ", Get_Doc[0][1]
 	print ""
-#=================================End of the program========================
